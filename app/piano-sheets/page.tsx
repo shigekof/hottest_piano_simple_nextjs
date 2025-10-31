@@ -1,4 +1,33 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Piano Sheet Music Collection - Free Downloads | Hottest Piano',
+  description: 'Download high-quality piano sheet music for free. Classical pieces by Chopin, Debussy, Bach and contemporary works by Einaudi. PDF downloads and MuseScore links available.',
+  keywords: 'piano sheet music, free piano sheets, classical piano music, Chopin sheet music, Debussy sheet music, Bach inventions, Einaudi piano music, PDF piano sheets',
+  openGraph: {
+    title: 'Piano Sheet Music Collection - Free Downloads',
+    description: 'Download high-quality piano sheet music for free. Classical and contemporary pieces available.',
+    url: 'https://hottest-piano.com/piano-sheets',
+    siteName: 'Hottest Piano',
+    images: [
+      {
+        url: 'https://hottest-piano.com/piano-sheets-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Piano Sheet Music Collection',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Piano Sheet Music Collection - Free Downloads',
+    description: 'Download high-quality piano sheet music for free. Classical and contemporary pieces available.',
+    images: ['https://hottest-piano.com/piano-sheets-og.jpg'],
+  },
+};
 
 export default function PianoSheets() {
   return (

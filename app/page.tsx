@@ -1,4 +1,33 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Hottest Piano - Beautiful Piano Music & Sheet Music Collection',
+  description: 'Discover amazing piano performances and download beautiful piano sheets. Features classical, contemporary, and popular piano music with free sheet music downloads.',
+  keywords: 'piano music, sheet music, piano sheets, classical piano, contemporary piano, piano performances, free sheet music, piano downloads',
+  openGraph: {
+    title: 'Hottest Piano - Beautiful Piano Music & Sheet Music',
+    description: 'Discover amazing piano performances and download beautiful piano sheets',
+    url: 'https://hottest-piano.com',
+    siteName: 'Hottest Piano',
+    images: [
+      {
+        url: 'https://hottest-piano.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Hottest Piano - Piano Music Collection',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Hottest Piano - Beautiful Piano Music & Sheet Music',
+    description: 'Discover amazing piano performances and download beautiful piano sheets',
+    images: ['https://hottest-piano.com/og-image.jpg'],
+  },
+};
 
 export default function Home() {
   return (
